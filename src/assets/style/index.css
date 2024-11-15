@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-size: calc((100vw / 750) * 100);
+	width: 100%;
+	height: 100%;
+	color: #000;
+	background: transparent;
+	font-family: "微软雅黑", "Microsoft YaHei", Tahoma, Arial, sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/**
+* 设置默认滚动条样式
+*/
+/* ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+} */
+/* ::-webkit-scrollbar-track { */
+/* background-color: #f5f5f5; */
+/* } */
+/* ::-webkit-scrollbar-track-piece {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+} */
+/* ::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 12px;
+} */
+/* ::-webkit-scrollbar-corner {
+  background-color: #f5f5f5;
+} */
+/* ::-webkit-resizer {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+} */
+
+.scrollbar-custom {
+	overflow-y: scroll;
+}
+.scrollbar-custom::-webkit-scrollbar {
+	width: 3px;
+	background-color: transparent;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+	background-color: #ddd;
+	border-radius: 12px;
+}
+
+.scrollbar-none {
+	overflow-y: scroll;
+}
+.scrollbar-none::-webkit-scrollbar {
+	width: 0px;
+	opacity: 0;
+	display: none;
+	width: 0;
+	height: 0;
+	color: transparent !important;
+}
+
+/* 主题配置 */
+:root:root {
+	--adm-color-primary: #0a62ff;
+	--adm-button-border-radius: 20px;
+}
+
+/* fix */
+.adm-center-popup-wrap {
+	min-width: 550px !important;
+}
+
+/* fix toast fail 时 图标没有居中 */
+.adm-toast-mask .adm-toast-main-icon .adm-toast-icon {
+	display: flex;
+	justify-content: center;
+}
+
+.minListContainer {
+	.adm-list-item-content {
+		height: inherit;
+	}
+}
