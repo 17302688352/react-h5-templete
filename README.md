@@ -1,6 +1,6 @@
 # 简介
 
-一个自用的 React 移动端 H5 项目模板，主要为了减少每次项目开发前的重复操作。主要采用 Vite + React + TypeScript + SWC + Tailwind css + Zustand + Ant Design Mobile 等常用技术栈和常用库构建。
+一个自用的 React 移动端 H5 项目模板，主要为了快速搭建，减少每次项目开发前的重复操作。主要采用 Vite + React + TypeScript + SWC + Tailwind css + Zustand + Ant Design Mobile 等常用技术栈和常用库构建。
 
 # 安装
 
